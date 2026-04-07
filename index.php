@@ -10,6 +10,11 @@
     <title>DoBu Martial Arts</title>
 </head>
 <body>
-<p> this is an update</p>
+    <h1>DoBu Martial Arts Website</h1>
+<p>Welcome to DoBu Martial Arts website, 
+Here we provide details and information about our facilities, courses, membership plans, 
+course timetable, members of staff and what they cover, private courses and age group courses,
+and relaxation and health beneficial facilities like the steam room.
+</p>
 </body>
 </html> 
