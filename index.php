@@ -38,5 +38,11 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <input type="password" id="pass_word" name="pass_word" required><br>
     <input type="submit" value="Sign up">
 </form>
+
+<!--This code will collect the customer data from the HTML form and insert it into the php database-->
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+
+    ?>
 </body>
 </html> 
