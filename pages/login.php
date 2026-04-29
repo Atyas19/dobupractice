@@ -17,3 +17,7 @@ session_start();
         <a herf="index.php">DoBu Signup</a>
     </nav>
 </header>
+<body>
+    <p> Hello</p>
+</body>
+</html>
