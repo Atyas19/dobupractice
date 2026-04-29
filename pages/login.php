@@ -14,7 +14,7 @@ session_start();
 <header>
     <h1>DoBu Martial Arts website Login</h1>
     <nav>
-        <a herf="index.php">DoBu Signup</a>
+        <a href="http://localhost/my_project/dobupractice/index.php">DoBu Signup</a>
     </nav>
 </header>
 <body>

@@ -14,7 +14,7 @@ session_start();
 <header>
     <h1>DoBu Martial Arts website Sign up</h1>
     <nav>
-        <a herf="http://localhost/my_project/dobupractice/pages/login.php">DoBu login</a>
+        <a href="http://localhost/my_project/dobupractice/pages/login.php">DoBu login</a>
     </nav>
 </header>
 <body>
@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mobile = $_POST['mobile'];
 
     //insert collected data into users database table stmt to make the program secure from SQL injections
+
 }
 ?>
 </body>
