@@ -48,6 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lname = $_POST['lname'];
     $email = $_POST['email'];
     $pass_word =password_hash($_POST['pass_word'], PASSWORD_DEFAULT);
+    $mobile = $_POST['mobile'];
+
+    //insert collected data into users database table stmt to make the program secure from SQL injections
 }
 ?>
 </body>
