@@ -25,7 +25,7 @@ and relaxation and health beneficial facilities like the steam room. To learn mo
 and access more of the pages create an account using your details in the form below.
 If you already have an account, go to the hamburger menu and select login.</p>
 <br><br>
-<div class = "form">
+
 <h2>Sign-up form</h2>
 <form action="/index.php" method="POST">
     <label for="fname">First_name:</label><br>
@@ -51,7 +51,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mobile = $_POST['mobile'];
 
     //insert collected data into users database table stmt to make the program secure from SQL injections
+    $stmt = $conn->prepare("INSERT INTO Users (fname, lname, email, pass_word, mobile) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $fname, $lname, $email, $pass_word, $mobile);
 
+    if ($stmt->execute()) {
+        header("Location: login.php");
+        exit();
+    } else {
+        echo "Sign up Failed, please try again.";
+    }
+    $stmt->close();
 }
 ?>
 </body>
