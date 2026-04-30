@@ -21,6 +21,7 @@ session_start();
         </div>
     </div>
 </header>
+
 <body>
 <section>
 <p>Welcome to DoBu Martial Arts website, 
@@ -88,7 +89,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <input type="tel" id="mobile" name="mobile" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
     <label for="membership">Select a membership:</label><br>
     <select id="membership" name="membership" required>
-        <option value="">Select a membership</option>
+        <option value="">Select a membership</option><br>
         <option value="basic">Basic</option>
         <option value="intermediate">Intermediate</option>
         <option value="advanced">Advanced</option>

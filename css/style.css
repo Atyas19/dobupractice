@@ -4,7 +4,7 @@ header {
 
 .h1 {
     text-align:center;
-    font-family:'Arial';
+    font-family:Arial;
     color:black;
     float:'left';
     width:auto;
@@ -38,13 +38,39 @@ header {
 }
 
 .pages a:hover {
-    background-color: violet;
+    background-color: orange;
 }
 
-.menu:active .pages {
+.menu:hover .pages {
     display: block;
 }
 
 .menu:hover .dropbtn{
-    background-color: pink;
+    background-color: blue;
 }
+
+body {
+    background-color:antiquewhite;
+}
+
+section {
+    box-sizing:border-box;
+}
+
+p {
+    font-size: 10vw;
+    color:black;
+    font-family:Arial;
+}
+
+.membership_table h2{
+    font-family:Arial;
+}
+.membership_table table, tr, td, th{
+    font-family:Arial;
+    font-size: 10vw;
+    border: 10px solid black;
+    align-content:flex-start;
+}
+
+
