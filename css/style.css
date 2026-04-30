@@ -63,11 +63,15 @@ p.section {
 .membership_table h2{
     font-family:Arial;
 }
-.membership_table table, tr, td, th{
+.membership_table table, tr {
     font-family:Arial;
     font-size: 50px;
     border: 5px solid black;
     align-content:flex-start;
+}
+.membership_table th, td {
+    font-family:Arial;
+    font-size: 40px;
 }
 
 
