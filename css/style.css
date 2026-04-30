@@ -14,9 +14,9 @@ header {
 .dropbtn {
     background-color:black;
     color:white;
-    padding-left: 10vw;
-    font-size: 16vw;
-    border: 10vw;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 10px;
     cursor: pointer;
 }
 
@@ -28,12 +28,12 @@ header {
     display: none;
     position: absolute;
     background-color:darkcyan;
-    min-width: 200vw;
+    min-width: 20px;
 }
 
 .pages a{
     color:black;
-    padding: 12vw 16vw;
+    padding: 12px 16px;
     display: block;
 }
 
