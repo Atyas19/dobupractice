@@ -65,7 +65,7 @@ p.section {
 }
 .membership_table table, tr, td, th{
     font-family:Arial;
-    font-size: 150px;
+    font-size: 50px;
     border: 5px solid black;
     align-content:flex-start;
 }
