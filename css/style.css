@@ -41,7 +41,7 @@ header {
     background-color: violet;
 }
 
-.menu:hover .pages {
+.menu:active .pages {
     display: block;
 }
 
