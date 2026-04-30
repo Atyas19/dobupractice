@@ -2,7 +2,7 @@ header {
     background-color: azure;
 }
 
-h1.header {
+.h1 {
     text-align:center;
     font-family:'Arial';
     color:black;
@@ -11,7 +11,7 @@ h1.header {
     box-sizing:border-box;
 }
 
-header, .dropbtn{
+.dropbtn {
     background-color:black;
     color:white;
     padding-left: 10vw;
@@ -20,12 +20,31 @@ header, .dropbtn{
     cursor: pointer;
 }
 
-header, .menu{
+.menu {
     position: relative;
 }
 
-header, .pages{
+.pages {
     display: none;
     position: absolute;
     background-color:darkcyan;
+    min-width: 200vw;
+}
+
+.pages a{
+    color:black;
+    padding: 12vw 16vw;
+    display: block;
+}
+
+.pages a:hover {
+    background-color: violet;
+}
+
+.menu:hover .pages {
+    display: block;
+}
+
+.menu:hover .dropbtn{
+    background-color: pink;
 }
