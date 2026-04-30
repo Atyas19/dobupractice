@@ -28,7 +28,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
 </section>
 <br><br>
 <div class="membership_table">
-<h3>Membership Table</h3>
+<h2>Membership Table</h2>
 <table>
     <tr>
         <th>Membership Options</th>
