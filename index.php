@@ -10,12 +10,16 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoBu Martial Arts Sign-up</title>
+    <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
 </head>
 <header>
     <h1>DoBu Martial Arts website Sign up</h1>
-    <nav class="menu">
-        <a href="http://localhost/my_project/dobupractice/pages/login.php">DoBu login</a>
-    </nav>
+    <div class="menu">
+        <button class="dropbtn">Menu</button>
+        <div class="pages">
+            <a href="http://localhost/my_project/dobupractice/pages/login.php">DoBu login</a>
+        </div>
+    </div>
 </header>
 <body>
 <section>

@@ -1,0 +1,31 @@
+header {
+    background-color: azure;
+}
+
+h1.header {
+    text-align:center;
+    font-family:'Arial';
+    color:black;
+    float:'left';
+    width:auto;
+    box-sizing:border-box;
+}
+
+header, .dropbtn{
+    background-color:black;
+    color:white;
+    padding-left: 10vw;
+    font-size: 16vw;
+    border: 10vw;
+    cursor: pointer;
+}
+
+header, .menu{
+    position: relative;
+}
+
+header, .pages{
+    display: none;
+    position: absolute;
+    background-color:darkcyan;
+}
