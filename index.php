@@ -78,26 +78,26 @@ If you already have an account, go to the hamburger menu and select login.</p>
 <!--Sign up form to collect data and insert it into DoBu database creating an account-->
 <h3>Sign-up form</h3>
 <form action="index.php" method="POST">
-    <label for="fname">First_name:</label><br>
+    <label for="fname">First_name:</label>
         <input type="text" id="fname" name="fname" placeholder="John" required> <br>
-    <label for="lname">Last_name:</label><br>
+    <label for="lname">Last_name:</label>
         <input type="text" id="lname" name="lname" placeholder="Doe" required> <br>
-    <label for="email">Email:</label><br>
+    <label for="email">Email:</label>
         <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="j.doe@gmail.co.uk" required><br>
-    <label for="pass_word">password:</label><br>
+    <label for="pass_word">password:</label>
         <input type="password" id="pass_word" name="pass_word" required><br>
-    <label for="mobile">Mobile_number:</label><br>
+    <label for="mobile">Mobile_number:</label>
         <input type="tel" id="mobile" name="mobile" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
-    <label for="membership">Select a membership:</label><br>
-        <select id="membership" name="membership" required>
-            <option value="">Select a membership</option>
-            <option value="basic">Basic</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
-            <option value="elite">Elite</option>
-            <option value="private">Private</option>
-            <option value="junior">Junior</option>
-        <br><br>
+    <label for="membership">Select a membership:</label>
+    <select id="membership" name="membership" required>
+        <option value="">Select a membership</option>
+        <option value="basic">Basic</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="elite">Elite</option>
+        <option value="private">Private</option>
+        <option value="junior">Junior</option>
+        <br>
     <input type="submit" value="Sign up">
 </form>
 
