@@ -72,7 +72,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <td>£25.00 </td>
     </tr>
 </table>
-</div>
+<!--</div>-->
 <br>
 
 <!--<div class="form">-->
@@ -89,7 +89,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
     <label for="mobile">Mobile_number:</label><br>
         <input type="tel" id="mobile" name="mobile" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
     <label for="membership">Select a membership:</label><br>
-    <select id="membership" name="membership" required>
+    <select id="membership" name="membership" required><br>
         <option value="">Select a membership</option>
         <option value="basic">Basic</option>
         <option value="intermediate">Intermediate</option>
@@ -100,7 +100,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <br><br>
     <input type="submit" value="Sign up">
 </form>
-</div>
+<!--</div>-->
 
 <!--This code will collect the customer data from the HTML form and insert it into the php database-->
 <?php
