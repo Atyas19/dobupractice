@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+include "connection.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +75,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
 </div>
 <br>
 
-<div class="signup">
+<div class="form">
 <h3>Sign-up form</h3>
 <form action="index.php" method="POST">
     <label for="fname">First_name:</label><br>
@@ -95,7 +96,8 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <option value="advanced">Advanced</option>
         <option value="elite">Elite</option>
         <option value="private">Private</option>
-        <option value="junior">Junior</option><br><br>
+        <option value="junior">Junior</option>
+        <br><br>
     <input type="submit" value="Sign up">
 </form>
 </div>

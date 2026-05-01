@@ -2,7 +2,7 @@ header {
     background-color: azure;
 }
 
-.h1 {
+h1 {
     text-align:center;
     font-family:Arial;
     color:black;
@@ -68,6 +68,16 @@ p.section {
     font-size: 25px;
     border: 5px solid black;
     align-content:flex-start;
+}
+
+.form {
+    background-color:grey;
+    display:block;
+}
+
+form.h3 {
+    font-family:Arial;
+    font-size:10px;
 }
 
 

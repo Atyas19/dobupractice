@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+include "connection.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +14,21 @@ session_start();
 </head>
 <header>
     <h1>DoBu Martial Arts website Login</h1>
-    <nav>
-        <a href="http://localhost/my_project/dobupractice/index.php">DoBu Signup</a>
-    </nav>
+    <div class="menu">
+        <button class="dropbtn">Menu</button>
+        <div class="pages">
+            <a href="http://localhost/my_project/dobupractice/index.php">DoBu Signup</a>
+        </div>
+    </div>
 </header>
+
 <body>
-    <p> Hello</p>
+<section>
+<p>This is the DoBu login page after, You have created your account or already
+have made an account from a previous visit, you use your account details to fill in the form
+below to verify that you exist in the database and then will be redirected to the home page. 
+</p>
+</section>
+
 </body>
 </html>
