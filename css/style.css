@@ -16,7 +16,7 @@ h1 {
     color:white;
     padding-left: 10px;
     font-size: 16px;
-    border: 10px;
+    border: 20px;
     cursor: pointer;
 }
 
@@ -60,19 +60,20 @@ p.section {
     font-family:Arial;
 }
 
-.membership_table h2{
+h2 {
     font-family:Arial;
 }
-.membership_table table, tr, td, th {
+table, tr, td, th {
     font-family:Arial;
     font-size: 25px;
     border: 5px solid black;
-    align-content:flex-start;
+    align-content:normal;
 }
 
 .form {
     background-color:grey;
     display:block;
+    border: 2px solid black;
 }
 
 form.h3 {
