@@ -64,9 +64,10 @@ p.section {
 h2 {
     font-family:Arial;
 }
-table td, th {
+table tr, td, th {
     font-family:Arial;
-    font-size: 25px;
+    font-size: auto;
+    box-sizing:border-box;
     border: 5px solid black;
     align-content:normal;
 }
