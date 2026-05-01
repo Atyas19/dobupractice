@@ -33,7 +33,8 @@ and access more of the pages create an account using your details in the form be
 Along with which membership plan you intend to apply for a explaination table is provided.
 If you already have an account, go to the hamburger menu and select login.</p>
 </section>
-<br><br>
+<br>
+
 <!--Membership table to show membership prices-->
 <h2>Membership Table</h2>
 <table>

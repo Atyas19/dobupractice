@@ -18,7 +18,7 @@ include "connection.php";
         <button class="dropbtn">Menu</button>
         <div class="pages">
             <a href="http://localhost/my_project/dobupractice/pages/membership.php">DoBu Membership</a>
-            <a href="http://localhost/my_project/dobupractice/pages/contact.php">DoBu Contact<a>
+            <a href="http://localhost/my_project/dobupractice/pages/contact.php">DoBu Contact</a>
             <a href="http://localhost/my_project/dobupractice/pages/logout.php">Logout</a>
         </div>
     </div>
