@@ -75,7 +75,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
 </div>
 <br>
 
-<div class="form">
+<!--<div class="form">-->
 <h3>Sign-up form</h3>
 <form action="index.php" method="POST">
     <label for="fname">First_name:</label><br>

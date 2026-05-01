@@ -17,6 +17,7 @@ h1 {
     padding-left: 10px;
     font-size: 16px;
     border: 20px;
+    min-width:20px;
     cursor: pointer;
 }
 
@@ -70,15 +71,79 @@ table, tr, td, th {
     align-content:normal;
 }
 
-.form {
+form {
     background-color:grey;
     display:block;
     border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-form.h3 {
+h3 {
     font-family:Arial;
     font-size:10px;
+    background-color:brown;
+    color:white;
+}
+
+label {
+    display:block;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding:10px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding:10px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding:10px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding:10px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: darkred;
+    color:white;
+    padding: 14px;
+    margin: 8px 0;
+    display:inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:blue;
 }
 
 
