@@ -24,6 +24,7 @@ include "connection.php"
 </header>
 
 <body>
+    <!--DoBu sign up page introduction paragraph-->
 <section>
 <p>Welcome to DoBu Martial Arts website, 
 Here we provide details and information about our courses, membership plans, 
@@ -33,7 +34,7 @@ Along with which membership plan you intend to apply for a explaination table is
 If you already have an account, go to the hamburger menu and select login.</p>
 </section>
 <br><br>
-<!--<div class="membership_table">-->
+<!--Membership table to show membership prices-->
 <h2>Membership Table</h2>
 <table>
     <tr>
@@ -72,10 +73,9 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <td>£25.00 </td>
     </tr>
 </table>
-<!--</div>-->
 <br>
 
-<!--<div class="form">-->
+<!--Sign up form to collect data and insert it into DoBu database creating an account-->
 <h3>Sign-up form</h3>
 <form action="index.php" method="POST">
     <label for="fname">First_name:</label><br>
@@ -100,7 +100,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <br><br>
     <input type="submit" value="Sign up">
 </form>
-<!--</div>-->
+
 
 <!--This code will collect the customer data from the HTML form and insert it into the php database-->
 <?php

@@ -30,5 +30,19 @@ below to verify that you exist in the database and then will be redirected to th
 </p>
 </section>
 
+<!--Login form details and collection to use for verification-->
+<h3>Login form</h3>
+<form action="login.php" method="POST">
+    <label for="fname">First_name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="John" required> <br>
+    <label for="lname">Last_name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required> <br>
+    <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="j.doe@gmail.co.uk" required><br>
+    <label for="pass_word">password:</label><br>
+        <input type="password" id="pass_word" name="pass_word" required><br><br>
+    <input type="submit" value="Login">
+</form>
+
 </body>
 </html>
