@@ -48,7 +48,12 @@ It will also provide information on the gym facility and the equipment in place 
 <article>
     <img scr="http://localhost/my_project/dobupractice/assets/dobu_gym.jpg" alt="Martial Arts gym with matted floors and professional equipment">
 <article>
-
+<p>This is the DoBu Martial Arts Gym facility where all your martial arts lessons are going to take place,
+like Karate, Judo, Jiu-jitsu, and others, The gym is fitted with matted floors and professional equipment,
+to provide better teaching and training, there are also kid classes for younger students,
+and there is private lessons for users that need one-on-one guidence.</p>
+<br>
+<img scr="http://localhost/my_project/dobupractice/assets/dobu_training.jpg" alt="Karate Lesson showing students and instructor">
 
 </body>
 </html>

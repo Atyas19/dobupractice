@@ -98,7 +98,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <option value="elite">Elite</option>
         <option value="private">Private</option>
         <option value="junior">Junior</option>
-        <br>
+    </select><br>
     <input type="submit" value="Sign up">
 </form>
 

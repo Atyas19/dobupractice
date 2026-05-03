@@ -2,6 +2,17 @@
 session_start();
 
 include "connection.php";
+
+// Verifies if User is logged in
+if (!isset($_SESSION['fname'])) {
+    header("Location: login.php");
+    exit();
+}
+
+//Get users first name and email and membership from session
+$fname = $_SESSION['fname'];
+$email = $_SESSION['email'];
+$membership = $_SESSION['membership'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +37,54 @@ include "connection.php";
 
 <body>
 <section>
-<p>This is the DoBu login page after, You have created your account or already
-have made an account from a previous visit, you use your account details to fill in the form
-below to verify that you exist in the database and then will be redirected to the home page. 
+<p>Welcome <?php echo $fname; ?>, this is the DoBu Membership page where you can either,
+update your membership plan by filling in the form below to add the courses you want to take,
+or switch your membership plan if you want a membership with more benefits.
 </p>
 </section>
+
+<!--Membership form for course and membership details to be added to course table-->
+<h3>Membership form</h3>
+<form action="membership.php" method="POST">
+    <label for="membership">Select a Membership:</label><br>
+    <select id="membership" name="membership" required>
+        <option value="">Select a membership</option>
+        <option value="basic">Basic</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="elite">Elite</option>
+        <option value="private">Private</option>
+        <option value="junior">Junior</option>
+    </select><br>
+    <label for="course_1">Select a course:</label><br>
+    <select id="course_1" name="course_1" required>
+        <option value="">Select a course</option>
+        <option value="jiu-jitsu">Jiu-jitsu</option>
+        <option value="karate">Karate</option>
+        <option value="judo">Judo</option>
+        <option value="muay thai">Muay Thai</option>
+        <option value="private tuition">Private Tuition</option>
+        <option value="open mat">Open Mat</option>
+        <option value="kids jiu-jitsu">Kids Jiu-jitsu</option>
+        <option value="kids karate">Kids Karate</option>
+        <option value="kids judo">Kids Judo</option>
+    </select><br>
+    <label for="course_2">Select a second course:</label><br>
+    <select id="course_2" name="course_2">
+        <option value="">Select a course</option>
+        <option value="jiu-jitsu">Jiu-jitsu</option>
+        <option value="karate">Karate</option>
+        <option value="judo">Judo</option>
+        <option value="muay thai">Muay Thai</option>
+        <option value="private tuition">Private Tuition</option>
+        <option value="open mat">Open Mat</option>
+        <option value="kids jiu-jitsu">Kids Jiu-jitsu</option>
+        <option value="kids karate">Kids Karate</option>
+        <option value="kids judo">Kids Judo</option>
+    </select><br>
+    <input type="submit" value="Apply">
+</form>
+
 
 </body>
 </html>
