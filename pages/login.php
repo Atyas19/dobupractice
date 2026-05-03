@@ -44,5 +44,44 @@ below to verify that you exist in the database and then will be redirected to th
     <input type="submit" value="Login">
 </form>
 
+
+<!--This code is using php commands to compare the details input into the form and database to verify the user account-->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $pass_word = $_POST['pass_word'];
+
+    //sql statements to find and compare user data by email
+    $stmt = $conn->prepare("SELECT * FROM User WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    //verification that user account exists and is valid within the database
+    if ($result->num_rows === 1) {
+        $User = $result->fetch_assoc();
+
+        //verify the password with the hashed password stored in the user DB table
+        if (password_verify($pass_word, $User['pass_word'])) {
+            $_SESSION['UID'] = $User['UID']; //unique id identifyer
+            $_SESSION['fname'] = $User['fname']; //stores first name attribute
+            $_SESSION['lname'] = $User['lname']; //stores last name attribute
+
+            header("Location: home.php"); //redirect to home page
+            exit();
+        } else {
+            echo "Incorrect detail, please try again.";
+        }
+    } else {
+        echo "No User found with entered credentials, try again and make sure account exist with sign up.";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 </body>
 </html>

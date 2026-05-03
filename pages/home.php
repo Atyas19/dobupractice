@@ -2,7 +2,18 @@
 session_start();
 
 include "connection.php";
+
+// Verifies if User is logged in
+if (!isset($_SESSION['fname'])) {
+    header("Location: login.php");
+    exit();
+}
+
+//Get users first name from session
+$fname = $_SESSION['fname'];
 ?>
+
+<!--start of home page code-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,13 +35,20 @@ include "connection.php";
     </div>
 </header>
 
+<!-- code that uses the session to paste the fname of the user into the intro paragraph-->
 <body>
 <section>
-<p>This is the DoBu login page after, You have created your account or already
-have made an account from a previous visit, you use your account details to fill in the form
-below to verify that you exist in the database and then will be redirected to the home page. 
+<p>Welcome <?php echo $fname; ?>, to the DoBu Martial Arts home page, This will help you 
+understand what courses and lessons We teach and the types of martial arts courses avaliable,
+It will also provide information on the gym facility and the equipment in place to help with teaching and exercise.
 </p>
 </section>
+<br>
+<!--code that opens assets folder and collects the neccessary image-->
+<article>
+    <img scr="http://localhost/my_project/dobupractice/assets/dobu_gym.jpg" alt="Martial Arts gym with matted floors and professional equipment">
+<article>
+
 
 </body>
 </html>
