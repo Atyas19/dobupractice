@@ -1,7 +1,17 @@
 <?php
 session_start();
 
-include "connection.php";
+include "http://localhost/my_project/dobupractice/connection.php";
+
+// Verifies if User is logged in
+if (!isset($_SESSION['fname'])) {
+    header("Location: login.php");
+    exit();
+}
+
+//Get users first name and email and membership from session
+$fname = $_SESSION['fname'];
+$email = $_SESSION['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
