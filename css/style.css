@@ -28,7 +28,7 @@ h1 {
 .pages {
     display: none;
     position: absolute;
-    background-color:darkcyan;
+    background-color:white;
     min-width: 20px;
 }
 
@@ -39,7 +39,7 @@ h1 {
 }
 
 .pages a:hover {
-    background-color: orange;
+    background-color: grey;
 }
 
 .menu:hover .pages {
@@ -47,7 +47,7 @@ h1 {
 }
 
 .menu:hover .dropbtn{
-    background-color: blue;
+    background-color: red;
 }
 
 body {

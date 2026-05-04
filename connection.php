@@ -1,5 +1,5 @@
 <?php
-/*Database configuration
+//Database configuration
 $servername = "localhost";
 $username = "root";
 $password = "HirbRWCPj75UF[zE";
@@ -15,5 +15,5 @@ if ($conn->connect_error) {
 }
 else {
     echo "Connected Successfully:";
-}*/
+}
 ?>

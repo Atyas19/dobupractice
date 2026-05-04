@@ -22,6 +22,7 @@ $fname = $_SESSION['fname'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoBu Martial Arts Home</title>
+    <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
 </head>
 <header>
     <h1>DoBu Martial Arts website Home</h1>

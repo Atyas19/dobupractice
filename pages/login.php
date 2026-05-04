@@ -10,6 +10,7 @@ include "http://localhost/my_project/dobupractice/connection.php";
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
     <title>DoBu Martial Arts Login</title>
 </head>
 <header>
