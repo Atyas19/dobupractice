@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "http://localhost/my_project/dobupractice/.../connection.php";
+include (".../connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

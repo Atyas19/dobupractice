@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "http://localhost/my_project/dobupractice/.../connection.php";
+include (".../connection.php");
 
 // Verifies if User is logged in
 if (!isset($_SESSION['fname'])) {
