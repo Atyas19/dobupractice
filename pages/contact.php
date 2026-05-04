@@ -40,11 +40,23 @@ $email = $_SESSION['email'];
 
 <body>
 <section>
-<p>This is the DoBu login page after, You have created your account or already
-have made an account from a previous visit, you use your account details to fill in the form
-below to verify that you exist in the database and then will be redirected to the home page. 
+<p>This is the DoBu martial arts contact page, <?php echo $fname; ?> by filling in the form below you can,
+explain what you liked about our website and what areas need improvement. This way
+we can make the website better when you next visit.
 </p>
 </section>
+
+<!--Contact form details-->
+<h3>Contact form</h3>
+<form action="contact.php" method="POST">
+    <label for="fname">First_name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="John" required> <br>
+    <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="j.doe@gmail.co.uk" required><br>
+    <label for="feedback">Feedback:</label><br>
+        <input type="textarea" id="feedback" name="feedback" rows="5" cols="40" required><br><br>
+    <input type="submit" value="Send">
+</form>
 
 </body>
 </html>
