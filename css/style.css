@@ -150,4 +150,11 @@ input[type=submit]:hover {
     background-color:blue;
 }
 
+.logo {
+    float:right;
+    padding-right:10px;
+    width: fit-content;
+    height: fit-content;
+}
+
 

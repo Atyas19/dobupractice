@@ -14,6 +14,9 @@ include "connection.php"
     <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
 </head>
 <header>
+    <div class="logo">
+        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+    </div>
     <h1>DoBu Martial Arts website Sign up</h1>
     <div class="menu">
         <button class="dropbtn">Menu</button>
@@ -114,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $membership = $_POST['membership'];
 
     //insert collected data into users database table stmt to make the program secure from SQL injections
-    $stmt = $conn->prepare("INSERT INTO Users (fname, lname, email, pass_word, mobile, membership) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO users (fname, lname, email, pass_word, mobile, membership) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssss", $fname, $lname, $email, $pass_word, $mobile, $membership);
 
     if ($stmt->execute()) {

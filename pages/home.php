@@ -25,6 +25,9 @@ $fname = $_SESSION['fname'];
     <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
 </head>
 <header>
+    <div class="logo">
+        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+    </div>
     <h1>DoBu Martial Arts website Home</h1>
     <div class="menu">
         <button class="dropbtn">Menu</button>

@@ -14,6 +14,9 @@ include "http://localhost/my_project/dobupractice/connection.php";
     <title>DoBu Martial Arts Login</title>
 </head>
 <header>
+    <div class="logo">
+        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+    </div>
     <h1>DoBu Martial Arts website Login</h1>
     <div class="menu">
         <button class="dropbtn">Menu</button>
@@ -55,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass_word = $_POST['pass_word'];
 
     //sql statements to find and compare user data by email
-    $stmt = $conn->prepare("SELECT * FROM User WHERE email = ?");
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();

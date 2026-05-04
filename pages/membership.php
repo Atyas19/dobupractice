@@ -25,6 +25,9 @@ $membership = $_SESSION['membership'];
     <link rel="stylesheet" href="http://localhost/my_project/dobupractice/css/style.css">
 </head>
 <header>
+    <div class="logo">
+        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+    </div>
     <h1>DoBu Martial Arts website Membership</h1>
     <div class="menu">
         <button class="dropbtn">Menu</button>
@@ -86,6 +89,28 @@ or switch your membership plan if you want a membership with more benefits.
     <input type="submit" value="Apply">
 </form>
 
+<!--php code to update and add membership data in course table and get fname and email from user table-->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $UID = $_SESSION['UID'];
+    $fname = $_SESSION['fname'];
+    $email = $_SESSION['email'];
+    $membership = $_POST['membership'];
+    $course_1 = $_POST['course_1'];
+    $course_2 = $_POST['course_2'];
 
+    //insert collected and referenced data into course table and stmt to make the website secure from SQL injection
+    $stmt = $conn->prepare("INSERT INTO courses(UID, fname, email, membership, course_1, course_2) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $UID, $fname, $email, $membership, $course_1, $course_2);
+
+    if ($stmt->execute()) {
+        echo "Course and Membership plan successfully inserted";
+    } else {
+        echo "Membership and course implementation failed, try again";
+    }
+    $stmt->close();
+    $conn->$close();
+}
+?>
 </body>
 </html>
