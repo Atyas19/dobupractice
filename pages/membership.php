@@ -91,15 +91,17 @@ or switch your membership plan if you want a membership with more benefits.
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $UID = $_SESSION['UID'];
-    $fname = $_SESSION['fname'];
-    $email = $_SESSION['email'];
     $membership = $_POST['membership'];
     $course_1 = $_POST['course_1'];
     $course_2 = $_POST['course_2'];
 
+    //update membership in users
+    $stmt = $conn->prepare ("UPDATE users SET membership = ? WHERE UID = ?");
+    $stmt->bind_param("si", $membership, $UID);
+
     //insert collected and referenced data into course table and stmt to make the website secure from SQL injection
-    $stmt = $conn->prepare("INSERT INTO courses(UID, fname, email, membership, course_1, course_2) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $UID, $fname, $email, $membership, $course_1, $course_2);
+    $stmt = $conn->prepare("INSERT INTO courses(UID, membership, course_1, course_2) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("isss", $UID, $membership, $course_1, $course_2);
 
     if ($stmt->execute()) {
         echo "Course and Membership plan successfully inserted";
@@ -107,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Membership and course implementation failed, try again";
     }
     $stmt->close();
-    $conn->$close();
+    $conn->close();
 }
 ?>
 </body>

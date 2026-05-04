@@ -92,7 +92,7 @@ If you already have an account, go to the hamburger menu and select login.</p>
         <input type="password" id="pass_word" name="pass_word" required><br>
     <label for="mobile">Mobile_number:</label>
         <input type="tel" id="mobile" name="mobile" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
-    <label for="membership">Select a membership:</label>
+    <label for="membership">Select a Membership:</label><br>
     <select id="membership" name="membership" required>
         <option value="">Select a membership</option>
         <option value="basic">Basic</option>
@@ -118,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     //insert collected data into users database table stmt to make the program secure from SQL injections
     $stmt = $conn->prepare("INSERT INTO users (fname, lname, email, pass_word, mobile, membership) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $fname, $lname, $email, $pass_word, $mobile, $membership);
+    $stmt->bind_param("ssssss", $fname, $lname, $email, $pass_word, $mobile, $membership );
 
     if ($stmt->execute()) {
         header("Location: login.php");

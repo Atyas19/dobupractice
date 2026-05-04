@@ -65,13 +65,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //verification that user account exists and is valid within the database
     if ($result->num_rows === 1) {
-        $User = $result->fetch_assoc();
+        $user = $result->fetch_assoc();
 
         //verify the password with the hashed password stored in the user DB table
-        if (password_verify($pass_word, $User['pass_word'])) {
-            $_SESSION['UID'] = $User['UID']; //unique id identifyer
-            $_SESSION['fname'] = $User['fname']; //stores first name attribute
-            $_SESSION['lname'] = $User['lname']; //stores last name attribute
+        if (password_verify($pass_word, $user['pass_word'])) {
+            $_SESSION['UID'] = $user['UID']; //unique id identifyer
+            $_SESSION['fname'] = $user['fname']; //stores first name attribute
+            $_SESSION['email'] = $user['emaill']; //stores email name attribute
 
             header("Location: home.php"); //redirect to home page
             exit();
