@@ -44,6 +44,9 @@ update your membership plan by filling in the form below to add the courses you 
 or switch your membership plan if you want a membership with more benefits.
 </p>
 </section>
+<aside>
+<img src="../assets/timetable.png" alt="timetable">
+</aside>
 
 <!--Membership form for course and membership details to be added to course table-->
 <h3>Membership form</h3>
@@ -98,10 +101,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //update membership in users
     $stmt = $conn->prepare ("UPDATE users SET membership = ? WHERE UID = ?");
     $stmt->bind_param("si", $membership, $UID);
+    $stmt->execute();
 
     //insert collected and referenced data into course table and stmt to make the website secure from SQL injection
     $stmt = $conn->prepare("INSERT INTO courses(UID, membership, course_1, course_2) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("isss", $UID, $membership, $course_1, $course_2);
+    $stmt->execute();
 
     if ($stmt->execute()) {
         echo "Course and Membership plan successfully inserted";

@@ -157,4 +157,9 @@ input[type=submit]:hover {
     height:10%;
 }
 
+aside {
+    width:75px;
+    height:auto;
+}
+
 
