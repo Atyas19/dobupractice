@@ -151,10 +151,9 @@ input[type=submit]:hover {
 }
 
 .logo {
-    float:right;
     padding-right:10px;
-    width:50px;
-    height:15px;
+    width:auto;
+    height:auto;
 }
 
 
