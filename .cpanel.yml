@@ -1,5 +1,5 @@
 ---
   deployment:
    tasks:
-    - export DEPLOYPATH=/home/ateeqy/public_html/Demo123/
+    - export DEPLOYPATH=/home/ateeqy/public_html/DoBu/
     - /bin/cp -R * $DEPLOYPATH
