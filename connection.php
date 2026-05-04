@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "HirbRWCPj75UF[zE";
-$dbname = "root_dobu";
+$dbname = "dobu";
 
 //connection to the database
 $conn = new mysqli($servername, $username, $password, $dbname);
