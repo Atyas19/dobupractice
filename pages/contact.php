@@ -11,7 +11,6 @@ if (!isset($_SESSION['fname'])) {
 
 //Get users first name and email and membership from session
 $fname = $_SESSION['fname'];
-$email = $_SESSION['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
