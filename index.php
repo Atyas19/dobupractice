@@ -15,7 +15,7 @@ include "connection.php"
 </head>
 <header>
     <div class="logo">
-        <img src="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+        <img src="http://localhost/my_project/dobupractice/assets/dobu_martial_logo.jpg" alt="Logo">
     </div>
     <h1>DoBu Martial Arts website Sign up</h1>
     <div class="menu">
