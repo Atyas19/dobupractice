@@ -58,5 +58,37 @@ we can make the website better when you next visit.
     <input type="submit" value="Send">
 </form>
 
+<!--php code for Contact form and inserting data into contact table-->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $UID = $_SESSION['UID'];
+    $fname = $_POST['fname'];
+    $email = $_POST['email'];
+    $feedback = $_POST['feedback'];
+
+    //sql statements to find and compare user data by email
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    //verification that user account exists and is valid within the database
+    if ($result->num_rows === 1) {
+        $User = $result->fetch_assoc();
+        $stmt = $conn->prepare("INSERT INTO contact (UID, fname, email, feedback) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $UID, $fname, $email, $feedback);
+
+            echo "Feedback sent:";
+        } else {
+            echo "Incorrect detail, please try again.";
+        }
+    } else {
+        echo "No User found with entered credentials, try again and make sure account exist with sign up.";
+    }
+
+    $stmt->close();
+    $conn->close();
+?>
+
 </body>
 </html>
