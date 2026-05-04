@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "http://localhost/my_project/dobupractice/connection.php";
+include "http://localhost/my_project/dobupractice/.../connection.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ include "http://localhost/my_project/dobupractice/connection.php";
 </head>
 <header>
     <div class="logo">
-        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+        <img src="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
     </div>
     <h1>DoBu Martial Arts website Login</h1>
     <div class="menu">

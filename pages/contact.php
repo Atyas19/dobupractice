@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "http://localhost/my_project/dobupractice/connection.php";
+include "http://localhost/my_project/dobupractice/.../connection.php";
 
 // Verifies if User is logged in
 if (!isset($_SESSION['fname'])) {
@@ -25,7 +25,7 @@ $email = $_SESSION['email'];
 </head>
 <header>
     <div class="logo">
-        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+        <img src="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
     </div>
     <h1>DoBu Martial Arts website Contact</h1>
     <div class="menu">

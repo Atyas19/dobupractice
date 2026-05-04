@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "http://localhost/my_project/dobupractice/connection.php";
+include "http://localhost/my_project/dobupractice/.../connection.php";
 
 // Verifies if User is logged in
 if (!isset($_SESSION['fname'])) {
@@ -26,7 +26,7 @@ $fname = $_SESSION['fname'];
 </head>
 <header>
     <div class="logo">
-        <img scr="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
+        <img src="http://localhost/my_project/dobupractice/assets/dobu_logo.jpg" alt="Logo">
     </div>
     <h1>DoBu Martial Arts website Home</h1>
     <div class="menu">
@@ -50,14 +50,14 @@ It will also provide information on the gym facility and the equipment in place 
 <br>
 <!--code that opens assets folder and collects the neccessary image-->
 <article>
-    <img scr="http://localhost/my_project/dobupractice/assets/dobu_gym.jpg" alt="Martial Arts gym with matted floors and professional equipment">
+    <img src="http://localhost/my_project/dobupractice/assets/dobu_gym.jpg" alt="Martial Arts gym with matted floors and professional equipment">
 <article>
 <p>This is the DoBu Martial Arts Gym facility where all your martial arts lessons are going to take place,
 like Karate, Judo, Jiu-jitsu, and others, The gym is fitted with matted floors and professional equipment,
 to provide better teaching and training, there are also kid classes for younger students,
 and there is private lessons for users that need one-on-one guidence.</p>
 <br>
-<img scr="http://localhost/my_project/dobupractice/assets/dobu_training.jpg" alt="Karate Lesson showing students and instructor">
+<img src="http://localhost/my_project/dobupractice/assets/dobu_training.jpg" alt="Karate Lesson showing students and instructor">
 
 </body>
 </html>
